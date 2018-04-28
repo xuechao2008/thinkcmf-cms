@@ -84,6 +84,7 @@ class HomeBaseController extends BaseController
         $template = $this->parseTemplate($template);
         $more     = $this->getThemeFileMore($template);
         $this->assign('theme_vars', $more['vars']);
+        dump($more);
         $this->assign('theme_widgets', $more['widgets']);
         return parent::fetch($template, $vars, $replace, $config);
     }

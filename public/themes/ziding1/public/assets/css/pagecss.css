@@ -1,0 +1,30 @@
+#col-content-left{
+ display: flex;
+    list-style: none;
+    padding-left: 0;
+}
+
+#col-content-left li{
+ flex: 1;
+}
+
+.sy-box{
+    height: 600px;
+}
+
+/*footer.html*/
+#footer_info_r{
+    margin-top: 1rem;
+}
+
+#footer_info_text .text-info-m{
+    padding: 0;
+}
+
+#footer_info_text .text-info-m p{
+    margin: 0 0 2px;
+}
+#footer{
+    background: #00000040;
+    padding-top: 1.8rem;
+}

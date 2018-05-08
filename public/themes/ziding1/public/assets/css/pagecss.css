@@ -10,6 +10,7 @@
 
 .sy-box{
     height: 600px;
+    position: relative;
 }
 
 /*footer.html*/
@@ -27,4 +28,20 @@
 #footer{
     background: #00000040;
     padding-top: 1.8rem;
+}
+
+/*index.html*/
+.hot-news-list{
+
+}
+.dl-horizontal dt{
+    width: 200px;
+}
+#index-content-center{
+    margin: 1rem 0;
+}
+ul.sy-pager{
+   position: absolute;
+    bottom:0.5rem;
+    z-index: 99999999;
 }

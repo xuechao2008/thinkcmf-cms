@@ -18,6 +18,66 @@
                 "rule": {
                     "require": true
                 }
+            },
+            "business1":{
+                "title":"业务名称1",
+                "value":"",
+                "type":"text",
+                "tip":"这是一个业务名称1",
+                "rule":{
+                    "require":true
+                }
+
+            },
+            "business1_text":{
+                "title":"业务名称1描述文字",
+                "value":"",
+                "type":"text",
+                "tip":"业务名称1描述文字",
+                "rule":{
+                    "require":true
+                }
+
+            },
+            "business1":{
+                "title":"业务名称1",
+                "value":"",
+                "type":"text",
+                "tip":"这是一个业务名称1",
+                "rule":{
+                    "require":true
+                }
+
+            },
+            "business1_text":{
+                "title":"业务名称1描述文字",
+                "value":"",
+                "type":"text",
+                "tip":"业务名称1描述文字",
+                "rule":{
+                    "require":true
+                }
+
+            },
+            "business1":{
+                "title":"业务名称1",
+                "value":"",
+                "type":"text",
+                "tip":"这是一个业务名称1",
+                "rule":{
+                    "require":true
+                }
+
+            },
+            "business1_text":{
+                "title":"业务名称1描述文字",
+                "value":"",
+                "type":"text",
+                "tip":"业务名称1描述文字",
+                "rule":{
+                    "require":true
+                }
+
             }
         },
         "widgets": {
@@ -110,7 +170,7 @@
                         "placeholder": "请选择分类",
                         "tip": "",
                         "rule": {
-                            "require": true
+                            "require": false
                         }
                     }
                 }

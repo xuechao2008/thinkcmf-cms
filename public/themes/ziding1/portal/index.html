@@ -92,8 +92,8 @@
     </noslides>
 </ul>
 
-<div class="container">
-    <widget name="features">
+<div class="container-fluid" id="index-content-center">
+    <!--<widget name="features">
         <div>
             <h1 class="text-center">{$widget.title}</h1>
             <h3 class="text-center">{$widget.vars.sub_title}</h3>
@@ -117,9 +117,9 @@
             </div>
         </for>
 
-    </widget>
+    </widget>-->
 
-    <widget name="last_news">
+    <!--<widget name="last_news">
         <div>
             <h1 class="text-center">{$widget.title}</h1>
         </div>
@@ -167,7 +167,70 @@
                 </div>
             </portal:articles>
         </div>
-    </widget>
+    </widget>-->
+
+    <div class="container">
+        <div class="row">
+
+            <div class="col-lg-6 col-md-6 col-xs-12">
+                <php>
+                    $tag_id=1;
+                </php>
+                <div class="hot-news">
+                    <h4>公司新闻</h4>
+                    <p>COMPANY NEWS</p>
+
+                </div>
+                <portal:articles limit="3" order="post.published_time DESC"
+                                 tagId="$tag_id">
+                    <dl class="dl-horizontal" class="hot-news-list">
+                        <dt>
+                            <a class="img-wraper"
+                               href="{:url('portal/Article/index',array('id'=>$vo.id,'cid'=>$vo.category_id))}">
+                                <if condition="empty($vo.more.thumbnail)">
+                                    <img src="__TMPL__/public/assets/images/default_tupian4.png"
+                                         class="img-responsive" alt="{$vo.post_title}"/>
+                                    <else/>
+                                    <img width="180" src="{:cmf_get_image_url($vo.more.thumbnail)}"
+                                         class="img-responsive" alt="{$vo.post_title}"/>
+                                </if>
+                            </a>
+                        </dt>
+                        <dd>
+                            <a href="{:url('portal/Article/index',array('id'=>$vo['id'],'cid'=>$vo.category_id))}">{$vo.post_title}</a>
+                        </dd>
+                    </dl>
+                </portal:articles>
+            </div>
+
+            <div class="col-lg-6 col-md-6 col-xs-12">
+                <div class="hot-news">
+                    <h4>业务介绍</h4>
+                    <p> BUSINESS INTRODUCE</p>
+
+                </div>
+                <div class="business-list">
+                    <div class="option">
+                        <h5>{$theme_vars.business1 | default=''}</h5>
+                        <p>{$theme_vars.business1_text | default=''}</p>
+                    </div>
+
+                    <div class="option">
+                        <h5>{$theme_vars.business2 | default=''}</h5>
+                        <p>{$theme_vars.business2_text | default=''}</p>
+                    </div>
+
+                    <div class="option">
+                        <h5>{$theme_vars.business3 | default=''}</h5>
+                        <p>{$theme_vars.business3_text | default=''}</p>
+                    </div>
+
+                </div>
+        </div>
+    </div>
+
+
+</div>
 
 </div>
 

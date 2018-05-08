@@ -119,7 +119,7 @@
 
     </widget>-->
 
-    <!--<widget name="last_news">
+    <widget name="last_news">
         <div>
             <h1 class="text-center">{$widget.title}</h1>
         </div>
@@ -167,7 +167,7 @@
                 </div>
             </portal:articles>
         </div>
-    </widget>-->
+    </widget>
 
     <div class="container">
         <div class="row">
@@ -211,12 +211,20 @@
                 </div>
                 <div class="business-list">
                     <div class="option">
-                        <h5>{$theme_vars.business1 | default=''}</h5>
+                        <h5>{$theme_vars.business1 | default=''}
+                            <a href="/portal/list/index/id/5.html">
+                                招标代理
+                            </a>
+                        </h5>
                         <p>{$theme_vars.business1_text | default=''}</p>
                     </div>
 
                     <div class="option">
-                        <h5>{$theme_vars.business2 | default=''}</h5>
+                        <h5>{$theme_vars.business2 | default=''}
+                            <a href="/portal/list/index/id/5.html">
+                                招标代理
+                            </a>
+                        </h5>
                         <p>{$theme_vars.business2_text | default=''}</p>
                     </div>
 
